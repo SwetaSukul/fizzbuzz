@@ -17,14 +17,14 @@ def count_the_article(file):
 
 def sorted_words(file):
     data = file.read()
-    words = fdata.split()
+    words = data.split()
     words.sort(key=lambda item: (-len(item), item))
     return words
 
 
 def character_word_count(file):
     data = file.read()
-    words = fdata.split()
+    words = data.split()
     counts = dict()
     for word in words:
         if word in counts:
